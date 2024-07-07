@@ -29,7 +29,9 @@ export default function Projects() {
           </section>
       </div>
     </div >
-    <div id='projectsRowTwo' className={Classes.border}>
+
+
+    <div id='projectsRowTwo' className={Classes.borderTwo}>
       <div id='pThreeContainer' className={Classes.pThreeContainer}>
         <div style={{position: "relative", width: "100%", paddingBottom: "50%"}}>
           <Image src="/pThreeFront.webp" style={pThreeImageStyling} alt='text' objectFit='fit' layout='fill' />
@@ -40,7 +42,7 @@ export default function Projects() {
           </section>
       </div>
       <div id='pFourContainer' className={Classes.pFourContainer}>
-        <div style={{position: "relative", width: "100%", paddingBottom: "100%"}}>
+        <div style={{position: "relative", width: "100%", paddingBottom: "160%"}}>
           <Image src="/pFourFront.webp" style={pFourImageStyling} alt='text' objectFit='cover' layout='fill' />
         </div>  
         <section className={Classes.infoSection}>

@@ -11,6 +11,18 @@
     flex-wrap: nowrap;
     
 }
+.borderTwo {
+    width: 100%;
+    max-width: 100%;
+    padding-left: rem(22.5rem);
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
+
+    border: 2px solid red;
+
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
 
 
 .infoSection {
