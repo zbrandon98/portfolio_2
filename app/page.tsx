@@ -22,7 +22,7 @@ export default function Home() {
       </AppShell>
 
       <ScrollArea style={{height: '100%'}}>
-        <HomeTwo/>
+        <Projects/>
       </ScrollArea>
     </>
   )

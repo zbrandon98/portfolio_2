@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import classes from './NavBar.module.css';
-import { Button, Stack } from '@mantine/core';
+import { Button } from '@mantine/core';
 
 
 const ResumeDownloader = async () : Promise<void> => {
@@ -51,7 +51,8 @@ const NavBar = () => {
             Brandon David Zárate Estrada
         </div>
         <div className={classes.subheading}>
-            Software & Web Developer
+            Software & Web Developer based in CA that enjoys the
+            challenge of creating solutions to impactful problems.
         </div>
       </section>
 
@@ -79,7 +80,7 @@ const NavBar = () => {
       </section>
       <section className={projectsBodyStyle}>
         <div className={projectBodyText}>
-        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500} >ASUCD PANTRY</Button>
+        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500} className={classes.buttonFont}>ASUCD PANTRY</Button>
         <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>VIDEO GAME DISCOVERY APP</Button>
         <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>DATA SCIENCE LOOKS AT DISCRIMINATION</Button>
         <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>CI/CD PIPELINE</Button>

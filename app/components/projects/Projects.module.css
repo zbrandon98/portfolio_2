@@ -1,5 +1,85 @@
 .border {
-    border: 1rem solid blue;
-    height: 100vh;
-    padding-top: 2.2rem;
+    width: 100%;
+    max-width: 100%;
+    padding-left: rem(22.5rem);
+    padding-bottom: .2rem;
+    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
+
+    border: 2px solid red;
+
+    display: flex;
+    flex-wrap: nowrap;
+    
 }
+
+
+.infoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: .85rem;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: .7rem;
+    color: grey;
+}
+
+.pOneContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 37%;
+    height: 37%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pTwoContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 56%;
+    height: 20%;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.pThreeContainer {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    width: 65%;
+    height: 20%;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pFourContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    border: 2px solid green;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
