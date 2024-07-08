@@ -64,7 +64,7 @@ const NavBar = () => {
             Hello! My name is Brandon, and I am from a small town called
             Manteca, located in California. I recently graduated with a 
             CS degree from UC Davis. I went into CS because it allows me
-            to be creative through problem solving. It's a process I enjoy
+            to be creative through problem solving. It&apos;s a process I enjoy
             very much. 
             Besides programming, I enjoy meditating, running with friends,
             and playing Rocket League!
