@@ -3,7 +3,7 @@
     max-width: 100%;
     padding-left: rem(22.5rem);
     padding-bottom: .2rem;
-    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-9));
     display: flex;
     flex-wrap: nowrap;
 }
@@ -13,7 +13,7 @@
     max-width: 100%;
     padding-left: rem(22.5rem);
     padding-bottom: 3.5rem;
-    background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-9));
     display: flex;
     flex-wrap: nowrap;
     border-bottom: rem(1px) solid light-dark(var(--mantine-color-black), var(--mantine-color-white));
