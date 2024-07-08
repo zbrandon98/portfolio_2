@@ -2,7 +2,6 @@ import { useState } from 'react';
 import classes from './NavBar.module.css';
 import { Button } from '@mantine/core';
 
-
 const ResumeDownloader = async () : Promise<void> => {
     const response = await fetch("ZarateBrandon_resume.pdf");
     const blob = await response.blob();
@@ -25,11 +24,12 @@ const NavBar = () => {
   let contactBodyStyle = Contact ? classes.contactBodyShow : classes.contactBodyHide;
   let contactBodyText = Contact ? classes.contactBodyText : classes.contactBody;
 
-  console.log(projectBodyText);
+
   const handleAboutClick = () => {
     setAbout(!About);
     setProjects(false);
     setContact(false);
+
   };
 
   const handleProjectsClick = () => {
@@ -56,7 +56,7 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section className={classes.about} onMouseOver={handleAboutClick}>
+      <section id='about-area' className={classes.about} onMouseOver={handleAboutClick}>
         ABOUT
       </section>
       <section className={aboutBodyStyle}>
@@ -78,16 +78,56 @@ const NavBar = () => {
       <section className={classes.projects} onMouseOver={handleProjectsClick}>
         PROJECTS
       </section>
-      <section className={projectsBodyStyle}>
+      <section id='projects-area' className={projectsBodyStyle}>
         <div className={projectBodyText}>
-        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500} className={classes.buttonFont}>ASUCD PANTRY</Button>
-        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>VIDEO GAME DISCOVERY APP</Button>
-        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>DATA SCIENCE LOOKS AT DISCRIMINATION</Button>
-        <Button variant='transparent' justify='flex-start' color='black' size='compact-xs' fw={500}>CI/CD PIPELINE</Button>
+        <Button variant='transparent'
+                justify='flex-start' 
+                color='black' 
+                size='compact-xs' 
+                fw={500} 
+                className={classes.buttonFont}
+                component='a'
+                href='https://order.thepantry.ucdavis.edu/'
+                target='_blank'>
+                  THE PANTRY
+        </Button>
+        <Button variant='transparent'
+                justify='flex-start' 
+                color='black' 
+                size='compact-xs' 
+                fw={500} 
+                className={classes.buttonFont}
+                component='a'
+                href='https://gaming-center.vercel.app/'
+                target='_blank'>
+                  GAMING HUB
+        </Button>
+        <Button variant='transparent'
+                justify='flex-start' 
+                color='black' 
+                size='compact-xs' 
+                fw={500} 
+                className={classes.buttonFont}
+                component='a'
+                href='https://github.com/matloff/dsld'
+                target='_blank'>
+                  DATA SCIENCE LOOKS AT DISCRIMINATION
+        </Button>
+        <Button variant='transparent'
+                justify='flex-start' 
+                color='black' 
+                size='compact-xs' 
+                fw={500} 
+                className={classes.buttonFont}
+                component='a'
+                href='https://ecocar-demo.streamlit.app/'
+                target='_blank'>
+                  ECOCAR AUTOMATION
+        </Button>
         </div>
       </section>
 
-      <section className={classes.contact} onMouseOver={handleContactClick}>
+      <section id='contact-area' className={classes.contact} onMouseOver={handleContactClick}>
         CONTACT
       </section>
       <section className={contactBodyStyle}>

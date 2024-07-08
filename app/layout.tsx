@@ -1,14 +1,11 @@
 import '@mantine/core/styles.css';
-import { createTheme, ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 export const metadata = {
-  title: 'My Mantine app',
-  description: 'I have followed setup instructions carefully',
+  title: "Brandon's Portfolio",
+  description: 'Welcome and please take a loot at my projects :)',
 };
 
-const theme = createTheme({
-  defaultRadius: 'md',
-});
 
 export default function RootLayout({
   children,

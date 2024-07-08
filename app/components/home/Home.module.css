@@ -1,8 +1,0 @@
-.home {
-    width: 100vw;
-    min-height: 100vh;
-    background-color: light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-9));
-    border: 2px solid red;
-
-    display: flex;
-}

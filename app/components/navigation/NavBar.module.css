@@ -7,8 +7,7 @@
     align-items: start;
     background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
     border-right: rem(1px) solid light-dark(var(--mantine-color-black), var(--mantine-color-white));
-    border-bottom: rem(1px) solid red;
-  }
+}
 
 .heading {
     display: flex;
@@ -24,8 +23,8 @@
     padding-top: 0rem;
     letter-spacing: -1px;
     word-spacing: 1px;
-
 }
+
 .name {
     width: 100%;
     height: 7rem;
@@ -38,7 +37,6 @@
     letter-spacing: -2px;
     word-spacing: 4px;
 }
-
 
 .about {
     width: 100%;
@@ -55,7 +53,6 @@
     &:hover {
         background-color: light-dark(var(--mantine-color-yellow-4), var(--mantine-color-dark-9));
     }
-
 }
 
 .aboutBodyShow {
@@ -88,7 +85,6 @@
     padding-right: 1.5rem;
     word-spacing: 1px;
     letter-spacing: -1px;
-
 }
 
 .aboutBodyTextHide {
@@ -125,7 +121,6 @@
     opacity: 1;
     transition: height 1s ease, opacity 0.3s ease;
     animation: blockFade 3s;
-
 }
 
 .projectsBodyHide {
@@ -176,21 +171,17 @@
     &:hover {
         background-color: light-dark(var(--mantine-color-cyan-4), var(--mantine-color-cyan-5));
     }
-
 }
 
 
 .contactBodyShow {
     display: block;
     background-color: light-dark(var(--mantine-color-cyan-4), var(--mantine-color-cyan-4));
-
     width: 100%;
     height: 3.3rem;
     border-bottom: rem(1px) solid light-dark(var(--mantine-color-black), var(--mantine-color-white));
-
     opacity: 1;
     transition: height 0.8s ease, opacity 0.3s ease;
-
 }
 
 .contactBodyHide {
@@ -213,6 +204,10 @@
     font-weight: 100;
 }
 
+.disabled_button {
+    background-color: red;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     50% { opacity: 0 }
@@ -224,5 +219,4 @@
     75% {display: none}
     100% {display: block}
 }
-  
   

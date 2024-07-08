@@ -4,26 +4,54 @@
     padding-left: rem(22.5rem);
     padding-bottom: .2rem;
     background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
-
-    border: 2px solid red;
-
     display: flex;
     flex-wrap: nowrap;
-    
 }
-.borderTwo {
+
+.borderBottom {
     width: 100%;
     max-width: 100%;
     padding-left: rem(22.5rem);
+    padding-bottom: 3.5rem;
     background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9));
-
-    border: 2px solid red;
-
     display: flex;
     flex-wrap: nowrap;
-    
+    border-bottom: rem(1px) solid light-dark(var(--mantine-color-black), var(--mantine-color-white));
 }
 
+.footer {
+    width: 100%;
+    height: 3.3rem;
+    padding-left: rem(22.1rem);
+    display: flex;
+}
+
+.footerButton {
+    height: 100%;
+    width: 70%;
+    border-right: rem(1px) solid light-dark(var(--mantine-color-black), var(--mantine-color-white));
+    font-weight: 600;
+    font-size: .9rem;
+    padding-left: 1.4rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        background-color: light-dark(var(--mantine-color-grape-4), var(--mantine-color-dark-9));
+    }
+}
+
+.footerInfo {
+    height: 100%;
+    width: 30%;
+    font-weight: 400;
+    font-size: .7rem;
+    color: grey;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3.3rem;     
+}
 
 .infoSection {
     display: flex;
@@ -48,7 +76,6 @@
 .pOneContainer {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     width: 37%;
     height: 37%;
     margin-top: 1.5rem;
@@ -59,7 +86,6 @@
 .pTwoContainer {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     width: 56%;
     height: 20%;
     margin-top: 1.5rem;
@@ -72,7 +98,6 @@
 .pThreeContainer {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
     width: 65%;
     height: 20%;
     margin-top: 1.5rem;
@@ -88,10 +113,4 @@
     margin-top: 1.5rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    border: 2px solid green;
 }
-
-.break {
-    flex-basis: 100%;
-    height: 0;
-  }
