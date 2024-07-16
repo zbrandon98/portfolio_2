@@ -56,26 +56,27 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section id='about-area' className={classes.about} onMouseOver={handleAboutClick}>
+      <section id='about-area' className={classes.about} onClick={handleAboutClick}>
         ABOUT
       </section>
       <section className={aboutBodyStyle}>
+        <div className={classes.aboutBodyWrapper}>
         <div  className={aboutBodyText}>
             Hello! My name is Brandon, and I am from a small town called
             Manteca, located in California. I recently graduated with a 
             CS degree from UC Davis. I went into CS because it allows me
-            to be creative through problem solving. It&apos;s a process I enjoy
-            very much. 
-            Besides programming, I enjoy meditating, running with friends,
-            and playing Rocket League!
+            to be creative through design and problem solving. It&apos;s 
+            a process I enjoy very much. 
+            Besides programming, I enjoy running with friends and snowboarding!
         </div>
         <div className={aboutBodyText}>
-            If you want to reach about work or talk about anything, feel free
-            to reach out! Contact info is below :)
+            If you want to reach out about work or talk about anything, feel free
+            to message me! Contact info is below :)
+        </div>
         </div>
       </section>
 
-      <section className={classes.projects} onMouseOver={handleProjectsClick}>
+      <section className={classes.projects} onClick={handleProjectsClick}>
         PROJECTS
       </section>
       <section id='projects-area' className={projectsBodyStyle}>
@@ -127,7 +128,7 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section id='contact-area' className={classes.contact} onMouseOver={handleContactClick}>
+      <section id='contact-area' className={classes.contact} onClick={handleContactClick}>
         CONTACT
       </section>
       <section className={contactBodyStyle}>
