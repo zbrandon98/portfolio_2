@@ -17,10 +17,13 @@ const NavBar = () => {
   const [Projects, setProjects] = useState(false);
   const [Contact, setContact] = useState(false);
 
+  let aboutButtonIsActive = About ? classes.aboutActive : classes.about;
   let aboutBodyStyle = About ? classes.aboutBodyShow : classes.aboutBodyHide;
   let aboutBodyText = About ? classes.aboutBodyFadeIn : classes.aboutBodyTextHide;
+  let projectsButtonIsActive = Projects ? classes.projectsActive : classes.projects;
   let projectsBodyStyle = Projects ? classes.projectsBodyShow : classes.projectsBodyHide;
   let projectBodyText = Projects ? classes.projectsStackContainer : classes.projectsStackContainerHide;
+  let contactButtonIsActive = Contact ? classes.contactActive : classes.contact;
   let contactBodyStyle = Contact ? classes.contactBodyShow : classes.contactBodyHide;
   let contactBodyText = Contact ? classes.contactBodyText : classes.contactBody;
 
@@ -56,7 +59,7 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section id='about-area' className={classes.about} onClick={handleAboutClick}>
+      <section id='about-area' className={aboutButtonIsActive} onClick={handleAboutClick}>
         ABOUT
       </section>
       <section className={aboutBodyStyle}>
@@ -76,7 +79,7 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section className={classes.projects} onClick={handleProjectsClick}>
+      <section className={projectsButtonIsActive} onClick={handleProjectsClick}>
         PROJECTS
       </section>
       <section id='projects-area' className={projectsBodyStyle}>
@@ -128,7 +131,7 @@ const NavBar = () => {
         </div>
       </section>
 
-      <section id='contact-area' className={classes.contact} onClick={handleContactClick}>
+      <section id='contact-area' className={contactButtonIsActive} onClick={handleContactClick}>
         CONTACT
       </section>
       <section className={contactBodyStyle}>
