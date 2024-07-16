@@ -3,7 +3,7 @@ import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 export const metadata = {
   title: "Brandon's Portfolio",
-  description: 'Welcome and please take a loot at my projects :)',
+  description: 'Welcome and please take a look at my projects :)',
 };
 
 
