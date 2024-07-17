@@ -16,7 +16,7 @@ const NavBar = () => {
 ;  const [About, setAbout] = useState(false);
   const [Projects, setProjects] = useState(false);
   const [Contact, setContact] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 510);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   
 
   useEffect(() => {
