@@ -64,7 +64,7 @@ const NavBar = () => {
   };
 
   return (
-    <div id='#navbar' className={classes.navbar}>
+    <div id='navbar' className={classes.navbar}>
       <section className={classes.heading}>
         <div className={classes.name}>
             Brandon David Zárate Estrada
@@ -81,16 +81,20 @@ const NavBar = () => {
       <section className={aboutBodyStyle}>
         <div className={classes.aboutBodyWrapper}>
         <div  className={aboutBodyText}>
+            <span className={classes.aboutParagraphOne}>
             Hello! My name is Brandon, and I am from a small town called
             Manteca, located in California. In June, 2024, I graduated with a 
             Computer Science degree from UC Davis. I went into CS because it allows me
             to be creative through design and problem solving. It&apos;s 
             a process I enjoy very much. 
             Besides programming, I enjoy running with friends and snowboarding!
+            </span>
         </div>
         <div className={aboutBodyText}>
+            <span className={classes.aboutParagraphTwo}>
             If you want to reach out about work or talk about anything, feel free
             to message me! Contact info is below :)
+            </span>
         </div>
         </div>
       </section>
