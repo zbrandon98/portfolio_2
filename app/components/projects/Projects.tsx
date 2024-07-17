@@ -15,7 +15,9 @@ const scrollToTop = () => {
 };
 
 
+
 export default function Projects() {
+
   return (
     <div className={Classes.projectsModule}>
     <div id='projectsRowOne' className={Classes.border}>
@@ -70,7 +72,7 @@ export default function Projects() {
     </div>
 
     <div className={Classes.footer}>
-    <a href='#projectsRowOne' className={Classes.footerButton} onClick={(e) => {e.preventDefault(); scrollToTop();}}><div >BACK TO TOP</div></a>
+    <a href={linkToTop} className={Classes.footerButton} onClick={(e) => {e.preventDefault(); scrollToTop();}}><div >BACK TO TOP</div></a>
         <div className={Classes.footerInfo}>2024 Brandon David Zarate Estrada</div>
     </div>
     </div>

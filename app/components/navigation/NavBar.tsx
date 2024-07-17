@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import classes from './NavBar.module.css';
 import { Button } from '@mantine/core';
 
@@ -13,9 +13,24 @@ const ResumeDownloader = async () : Promise<void> => {
   };
 
 const NavBar = () => {
-  const [About, setAbout] = useState(false);
+;  const [About, setAbout] = useState(false);
   const [Projects, setProjects] = useState(false);
   const [Contact, setContact] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 510);
+  
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 700);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   let aboutButtonIsActive = About ? classes.aboutActive : classes.about;
   let aboutBodyStyle = About ? classes.aboutBodyShow : classes.aboutBodyHide;
@@ -26,6 +41,7 @@ const NavBar = () => {
   let contactButtonIsActive = Contact ? classes.contactActive : classes.contact;
   let contactBodyStyle = Contact ? classes.contactBodyShow : classes.contactBodyHide;
   let contactBodyText = Contact ? classes.contactBodyText : classes.contactBody;
+  let displayEmail = (isSmallScreen && Contact) ? classes.emailActive : classes.emailNone;
 
 
   const handleAboutClick = () => {
@@ -48,7 +64,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className={classes.navbar}>
+    <div id='#navbar' className={classes.navbar}>
       <section className={classes.heading}>
         <div className={classes.name}>
             Brandon David Zárate Estrada
@@ -66,8 +82,8 @@ const NavBar = () => {
         <div className={classes.aboutBodyWrapper}>
         <div  className={aboutBodyText}>
             Hello! My name is Brandon, and I am from a small town called
-            Manteca, located in California. I recently graduated with a 
-            CS degree from UC Davis. I went into CS because it allows me
+            Manteca, located in California. In June, 2024, I graduated with a 
+            Computer Science degree from UC Davis. I went into CS because it allows me
             to be creative through design and problem solving. It&apos;s 
             a process I enjoy very much. 
             Besides programming, I enjoy running with friends and snowboarding!
@@ -133,6 +149,7 @@ const NavBar = () => {
 
       <section id='contact-area' className={contactButtonIsActive} onClick={handleContactClick}>
         CONTACT
+        <span className={displayEmail}>zaratebrandon98@gmail.com</span>
       </section>
       <section className={contactBodyStyle}>
         <div className={contactBodyText}>
