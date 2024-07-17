@@ -72,7 +72,7 @@ export default function Projects() {
     </div>
 
     <div className={Classes.footer}>
-    <a href={linkToTop} className={Classes.footerButton} onClick={(e) => {e.preventDefault(); scrollToTop();}}><div >BACK TO TOP</div></a>
+    <a href='#projectsRowOne' className={Classes.footerButton} onClick={(e) => {e.preventDefault(); scrollToTop();}}><div >BACK TO TOP</div></a>
         <div className={Classes.footerInfo}>2024 Brandon David Zarate Estrada</div>
     </div>
     </div>
