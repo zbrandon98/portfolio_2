@@ -70,8 +70,9 @@ const NavBar = () => {
             Brandon David Zárate Estrada
         </div>
         <div className={classes.subheading}>
-            Software & Web Developer based in CA that enjoys the
-            challenge of creating solutions to impactful problems.
+            Software Engineer and implementation consultant based 
+            in Oregon that appreciates the impact my work has on
+            Oregon&apos;s great community.
         </div>
       </section>
 
@@ -82,12 +83,25 @@ const NavBar = () => {
         <div className={classes.aboutBodyWrapper}>
         <div  className={aboutBodyText}>
             <span className={classes.aboutParagraphOne}>
-            Hello! My name is Brandon, and I am from a small town called
-            Manteca, located in California. In June, 2024, I graduated with a 
-            Computer Science degree from UC Davis. I went into CS because it allows me
-            to be creative through design and problem solving. It&apos;s 
-            a process I enjoy very much. 
-            Besides programming, I enjoy running with friends and snowboarding!
+            Hello! My name&apos;s Brandon and I come from a small town called
+            Manteca, located in California.
+            </span>
+            <span className={classes.aboutParagraphOne}>
+            I have a Bachelor&apos;s degree in Computer Science from UC Davis. 
+            In October 2024, I joined FAST Enterprises, where I was placed in 
+            Oregon&apos;s DMV project. Here, my responsibilities are to develop 
+            and maintain the software the DMV uses to service the great state of 
+            Oregon and its people.
+            </span>
+            <span className={classes.aboutParagraphOne}>
+            Moving here to Oregon has been a blessing in disguise. I was hestitant 
+            about it because I&apos;ve never done so. But once I was situated here, 
+            I really started embracing this beautiful state and its people.  
+            The greenery, outdoor activities, and the people I&apos;ve met along the
+            way have made my time here unforgettable.  
+            </span>
+            <span className={classes.aboutParagraphOne}>
+            Here&apos;s to more great times in the future!
             </span>
         </div>
         <div className={aboutBodyText}>
